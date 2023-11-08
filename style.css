@@ -1,0 +1,122 @@
+html {font-family: 'Manrope', sans-serif;}
+
+body {background-color: white;}
+
+/* header section */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	
+}
+/* navigation links */
+.links {
+    display: flex;
+	align-items: center;
+	gap: 40px;
+    list-style-type: none;
+    }
+
+.nav {color: #232323;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+/* text based logo in left corner */
+.logo {
+    /* font-family: 'Playfair Display', serif;
+    font-weight: bold; */
+    color: #0E204E;
+font-family: Playfair Display;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* button  */
+.touch {
+    background-color: #0E204E;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 15px;
+    padding: 11px 36px;
+}
+
+.touch:hover {
+    background-color: #FFF; 
+    color: #0E204E;
+    font-size: 20px;
+    line-height: 15px;}
+
+
+
+/* media queries */
+    .touch,
+    .links
+    
+        {display: none
+        }
+/* 
+Phone styles 
+Add a media query that will apply styles when the screen is 360px or larger
+*/
+@media only screen and (min-width: 360px) {
+    .logo,
+    .mobile_menu {
+display: flex;
+}
+  
+        
+    .touch,
+    .links
+    
+        {display: none
+        }}
+
+/*
+  tablet
+*/
+
+@media only screen and (min-width: 768px){
+	.logo,
+	.mobile_menu
+	
+	{
+		display: flex;
+			}
+
+            .links,
+            .touch 
+    	 {
+		display: none;
+	}
+}
+
+/*
+  desktop
+*/
+
+@media only screen and (min-width: 874px){
+	.logo,
+	.links,
+    .touch
+	
+	{
+		display: flex;
+			}
+
+	.mobile_menu
+	 {
+		display: none;
+	}
+}
