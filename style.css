@@ -58,8 +58,6 @@ line-height: normal;
     font-size: 20px;
     line-height: 15px;}
 
-
-
 /* media queries */
     .touch,
     .links
@@ -120,3 +118,41 @@ display: flex;
 		display: none;
 	}
 }
+
+/* section - class: paradise */
+
+/* desktop: contain h1 and p in a stylized box, image 1101 beside box */
+.paradise {
+	display: flex;
+	align-items: center;
+}
+.box1 {
+    min-width: 300px;
+    height: 100%;
+    background-color: #0E204E;
+    flex-shrink: 0;
+    }
+
+.PIdesc {
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: auto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.PIdesc2 {
+color: #FFF;
+font-family: Manrope;
+font-size: auto;
+font-style: normal;
+font-weight: 400;
+line-height: 180%;
+}
+
+.pic1101 {
+    width: 100%;
+    flex-shrink: 0;
+    
+}    
