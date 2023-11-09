@@ -4,13 +4,8 @@ body {background-color: white;}
 
 /* header section */
 
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-	
-}
+/* Elements at the very top of the page */
+
 /* navigation links */
 .links {
     display: flex;
@@ -19,31 +14,31 @@ body {background-color: white;}
     list-style-type: none;
     }
 
-.nav {color: #232323;
-font-family: Manrope;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;}
+.linkslist {
+    color: #232323;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
 
 /* text based logo in left corner */
 .logo {
-    /* font-family: 'Playfair Display', serif;
-    font-weight: bold; */
+
     color: #0E204E;
-font-family: Playfair Display;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: Playfair Display, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-/* button  */
+    /* button  */
 .touch {
     background-color: #0E204E;
     color: #FFF;
@@ -58,10 +53,222 @@ line-height: normal;
     font-size: 20px;
     line-height: 15px;}
 
+nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    } 
+    
+    /* Description of Pineapple island and the elements encompassing it */
+
+    .paradise {
+	    display: flex;
+	    align-items: center;
+        }
+    
+    .box1 {
+    min-width: 500px;
+    height: 430px;
+    background-color: #0E204E;
+        
+        }
+
+    .PIdesc {
+    padding-left: 10%;
+    padding-top: 5%;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+        }
+
+    .PIdesc2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-grow: 0;
+    
+        }
+
+    .deskparadise {
+    width: 750px;
+    flex-shrink: 0;
+        }    
+
+/* ABOUT PINEAPPLE ISLAND SECTION */
+
+.about {
+    padding-top: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.containerabout {
+    padding-right: 10%;
+    width: 80px;
+}
+
+.aboutheader {
+    color: #0E204E;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+        }
+.aboutp {
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-align:justify;
+    flex-grow: 0;
+}
+.rowdesk {
+    width: 600px;
+    flex-shrink: 0;
+}
+
+.aboutbox {
+    height: 510px;
+    width: 400px;
+    background-color: #0E204E;
+        
+        }
+
+        /* WHAT WE OFFER SECTION */
+   
+        .mobileicons {
+        min-width: 300px;
+        height: 100%;
+        background-color: #0E204E;
+        flex-shrink: 0;
+            }
+
+
+/* FEATURES SECTION */
+
+.amazingimg {
+    height: 600px;
+}
+
+.features {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+            }
+
+.featurecontainer {
+    height: 600px;
+    flex-direction: column;
+    
+            }
+
+.amazingheader {
+    padding-left: 5%;
+    color: #0E204E;
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+        }
+
+.altlist {
+    width: 542px;
+    height: 87px;
+    flex-shrink: 0;
+}
+
+.amazing {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.alternate {
+    background-color: rgba(14, 63, 51, 0.20);;
+}
+
+        /* FOOTER SECTION */
+        footer {
+            min-width: 300px;
+            height: 100%;
+            background-color: #0E204E;
+            flex-shrink: 0;
+                }
+
+                .PIfoot {
+                    color: #FFF;
+                    font-family: Manrope;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                         }
+                .descfoot {
+                    color: #FFF;
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 180%; /* 36px */
+                        }
+
+                .Newsfoot {
+                    color: #FFF;
+                    font-family: Playfair Display;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                        }
+
+                .signupfoot {
+                    color: #FFF;
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 30px */
+                        }
+
+              
+
 /* media queries */
     .touch,
-    .links
-    
+    .links,
+    .mobile_menu,
+    .mobileicons,
+    .mobileparadise,
+    .rowmobile,
+    .offermobile,
+    .extmooffer,
+    .availhome,
+    .descavailhome,
+    .mobileavail
+
         {display: none
         }
 /* 
@@ -69,17 +276,22 @@ Phone styles
 Add a media query that will apply styles when the screen is 360px or larger
 */
 @media only screen and (min-width: 360px) {
+    /* these will show */
     .logo,
-    .mobile_menu {
-display: flex;
-}
-  
+    .mobile_menu 
+    .mobileicons
+    .mobileparadise
+    .mobileavail
+    { display: flex;}
+
+  /* hiding */
         
     .touch,
-    .links
+    .links,
+    .deskparadise
     
-        {display: none
-        }}
+        {display: none}
+            }
 
 /*
   tablet
@@ -107,8 +319,9 @@ display: flex;
 @media only screen and (min-width: 874px){
 	.logo,
 	.links,
-    .touch
-	
+    .touch,
+    .deskparadise
+
 	{
 		display: flex;
 			}
@@ -122,37 +335,3 @@ display: flex;
 /* section - class: paradise */
 
 /* desktop: contain h1 and p in a stylized box, image 1101 beside box */
-.paradise {
-	display: flex;
-	align-items: center;
-}
-.box1 {
-    min-width: 300px;
-    height: 100%;
-    background-color: #0E204E;
-    flex-shrink: 0;
-    }
-
-.PIdesc {
-    color: #FFF;
-    font-family: Playfair Display;
-    font-size: auto;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.PIdesc2 {
-color: #FFF;
-font-family: Manrope;
-font-size: auto;
-font-style: normal;
-font-weight: 400;
-line-height: 180%;
-}
-
-.pic1101 {
-    width: 100%;
-    flex-shrink: 0;
-    
-}    
