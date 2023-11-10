@@ -1,10 +1,9 @@
+/* TRISH - GOAL 1 - go through code and find all classes that can be included under the beginning tags!!! */
 html {font-family: 'Manrope', sans-serif;}
 
 body {background-color: white;}
 
-/* header section */
-
-/* Elements at the very top of the page */
+/* HEADER SECTION */
 
 /* navigation links */
 .links {
@@ -61,7 +60,7 @@ nav {
         
     } 
     
-    /* Description of Pineapple island and the elements encompassing it */
+/* Description of Pineapple island and the elements encompassing it */
 
     .paradise {
 	    display: flex;
@@ -75,6 +74,7 @@ nav {
         
         }
 
+    /* TRISH - GOAL 2 - Go through and figure out where code can be more efficient!  */
     .PIdesc {
     padding-left: 10%;
     padding-top: 5%;
@@ -103,7 +103,7 @@ nav {
     width: 750px;
     flex-shrink: 0;
         }    
-
+/* END HEADER SECTION */
 /* ABOUT PINEAPPLE ISLAND SECTION */
 
 .about {
@@ -154,8 +154,15 @@ nav {
     background-color: #0E204E;
         
         }
+/* END ABOUT SECTION */
+/* WHY CHOOSE PINEAPPLE ISLAND SECTION */
 
-        /* WHAT WE OFFER SECTION */
+/* END WHY CHOOSE PINEAPPLE ISLAND SECTION */
+ /* WHAT WE OFFER SECTION */
+
+ /* DESKTOP SECTION FIRST */
+
+ /* MOBILE SECTION SECOND */
    
         .mobileicons {
         min-width: 300px;
@@ -163,8 +170,57 @@ nav {
         background-color: #0E204E;
         flex-shrink: 0;
             }
+/* END WHAT WE OFFER SECTION */
+/* GALLERIES SECTION */
+
+/* DESKTOP SECTION FIRST */
+            .h1desk { 
+                color: #0E204E;
+                font-family: Playfair Display;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .pdesk {
+                width: 596px;
+                color: #263238;
+                text-align: center;
+                font-family: Manrope;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 180%; 
+            }
+
+            .deskgallerydesc {
+                padding-left: 475px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }   
+
+            .deskimages {
+                    row-gap: 10px;
+                    column-gap: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+            }
+
+            .imgesgallery {
+                width: 400px;
+            }
 
 
+/* END GALLERY SECTION */
 /* FEATURES SECTION */
 
 .amazingimg {
@@ -172,6 +228,7 @@ nav {
 }
 
 .features {
+    padding-top: 250px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -210,8 +267,60 @@ nav {
 .alternate {
     background-color: rgba(14, 63, 51, 0.20);;
 }
+/* END FEATURES SECTION */
+/* BECOME AN AGENT */
 
-        /* FOOTER SECTION */
+.joining {
+        padding-top: 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 40px;
+    
+}
+
+.joinnow {
+    width: 319px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: baseline;
+    
+}
+
+.business {
+    height: 600px;
+}
+
+.agenttext {
+    color: #263238;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    flex-grow: 0;/* 30px */
+}
+/* END BECOME AN AGENT SECTION */
+/* STAY IN TOUCH FORM SECTION */
+
+.intouchform {
+    padding-top: 100px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+/* END STAY IN TOUCH SECTION */
+/* FOOTER SECTION */
         footer {
             min-width: 300px;
             height: 100%;
@@ -254,9 +363,30 @@ nav {
                     line-height: 150%; /* 30px */
                         }
 
-              
+                        .reversetouch {
+                            background-color: #ffffff;
+                            color: #0E204E;;
+                            font-size: 20px;
+                            line-height: 15px;
+                            padding: 11px 36px;
+                        }
+                        
+                        .reversetouch:hover {
+                            background-color: #0E204E; 
+                            color: #ffffff;
+                            font-size: 20px;
+                            line-height: 15px;}
+            
+/*END FOOTER SECTION  */
+/* ---------------------------------  */
+
+/* THIS BEGINS THE MEDIA QUERIES SECTION */
+/* DO NOT PUT ANY STYLIZING BELOW THIS SECTION */
+/* THIS SECTION IS A WORK IN PROGRESS AND NEEDS MORE WORK AND PRACTICE */
+/* ------------------------------------------- */
 
 /* media queries */
+/* Question: Do I put EVERY single tag/class here to begin with hiding EVERYTHING and THEN unhide as I go? */
     .touch,
     .links,
     .mobile_menu,
@@ -278,23 +408,31 @@ Add a media query that will apply styles when the screen is 360px or larger
 @media only screen and (min-width: 360px) {
     /* these will show */
     .logo,
-    .mobile_menu 
-    .mobileicons
-    .mobileparadise
-    .mobileavail
+    .mobile_menu, 
+    .mobileicons,
+    .mobileparadise,
+    .mobileavail,
+    .offermobile,
+    .availhome,
+    .descavailhome,
+    .mobilegallery
     { display: flex;}
 
   /* hiding */
         
     .touch,
     .links,
-    .deskparadise
+    .deskparadise,
+    .deskgallery,
+    .deskimages, 
+    .deskicon, 
+    .features
     
         {display: none}
             }
 
 /*
-  tablet
+  tablet??
 */
 
 @media only screen and (min-width: 768px){
@@ -313,25 +451,32 @@ Add a media query that will apply styles when the screen is 360px or larger
 }
 
 /*
-  desktop
+  desktop, low min width because otherwise my screen wasnt big enough for the baseline of 1024px
 */
 
 @media only screen and (min-width: 874px){
 	.logo,
 	.links,
     .touch,
-    .deskparadise
+    .deskparadise,
+    .deskgallery, 
+    .features, 
+    .deskimages, 
+    .deskicon 
 
 	{
 		display: flex;
 			}
 
-	.mobile_menu
+	.mobile_menu,
+    .mobileavail,
+    .mobileicons,
+    .mobileparadise,
+    .mobilegallery,
+    .offermobile
 	 {
 		display: none;
 	}
 }
 
-/* section - class: paradise */
 
-/* desktop: contain h1 and p in a stylized box, image 1101 beside box */
