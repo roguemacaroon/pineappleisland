@@ -1,4 +1,10 @@
 /* TRISH - GOAL 1 - go through code and find all classes that can be included under the beginning tags!!! */
+
+/* After Thursday's session, I realize that there is SEVERAL places in the code that can be improved and I for sure need to reclass many things to streamline */
+/* After Friday's session, I realize that I still need more work in positioning, I understand it, but I am using a lot of padding tags to fill out where things are not lining up properly */
+/* I am also aware that using exact measurements for pictures and boxes is a dangerous thing to do, as it does not guarentee it will not break */
+/* I also misused "flex shrink/grow" in places and need to remove those, because most are useless code  */
+
 html {font-family: 'Manrope', sans-serif;}
 
 body {background-color: white;}
@@ -108,6 +114,7 @@ nav {
 
 .about {
     padding-top: 10%;
+    padding-bottom: 10%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -157,10 +164,119 @@ nav {
 /* END ABOUT SECTION */
 /* WHY CHOOSE PINEAPPLE ISLAND SECTION */
 
+.whychoose {
+    padding-bottom: 5%;
+    min-width: 500px;
+    height: 700px;
+    background-color: #0E204E;
+}
+
+.amazingheader.choosing {
+    color: #FFF;
+    width: 300px;
+   }
+
+.chooseimgdesk {
+    height: 500px;
+}
+
+.choosedesktop {
+    padding: 10%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+		
+}
+
+.box2 {
+    height: 500px;
+    width: 400px;
+    background-color: #FFF;
+}
+
+.choosedeskwording {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+  
+}
+
+.agenttext.choosewhy {
+        font-size: 20px;
+}
+
+.div1 {
+    padding: 40px;
+   
+}
+
+.div2 {
+    padding-right: 20px;
+}
+
 /* END WHY CHOOSE PINEAPPLE ISLAND SECTION */
  /* WHAT WE OFFER SECTION */
 
  /* DESKTOP SECTION FIRST */
+
+ .headingoffer {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+
+ }
+
+ .extdeoffer{
+    width: 600px;
+ }
+
+ .picandicons
+ {
+    padding-left: 20px;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+    gap: 10%;
+ }
+
+.deskicons {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.deskicon1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-evenly;
+    
+    gap: 30%;
+}
+
+.deskicon2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-evenly;
+    
+    gap: 30%;
+}
 
  /* MOBILE SECTION SECOND */
    
@@ -229,17 +345,20 @@ nav {
 
 .features {
     padding-top: 250px;
+    padding-bottom: 100px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+    gap: 5%;
             }
 
 .featurecontainer {
     height: 600px;
     flex-direction: column;
+    
     
             }
 
@@ -254,8 +373,8 @@ nav {
         }
 
 .altlist {
-    width: 542px;
-    height: 87px;
+    width: 400px;
+    /* height: 87px; */
     flex-shrink: 0;
 }
 
@@ -267,6 +386,11 @@ nav {
 .alternate {
     background-color: rgba(14, 63, 51, 0.20);;
 }
+
+.listeditems {
+        line-height: 2em;
+}
+
 /* END FEATURES SECTION */
 /* BECOME AN AGENT */
 
@@ -311,6 +435,8 @@ nav {
 
 .intouchform {
     padding-top: 100px;
+    padding-bottom: 100px;
+
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -318,6 +444,36 @@ nav {
 	align-items: center;
 	align-content: center;
 }
+
+.sitinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+
+}
+
+.input {
+    line-height: 3em;
+}
+
+.input2 {
+    line-height: 9em;
+}
+
+.input3 {
+    line-height: 2em;
+}
+
+.sitform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
 
 /* END STAY IN TOUCH SECTION */
 /* FOOTER SECTION */
@@ -327,55 +483,85 @@ nav {
             background-color: #0E204E;
             flex-shrink: 0;
                 }
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
 
-                .PIfoot {
-                    color: #FFF;
-                    font-family: Manrope;
-                    font-size: 40px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                         }
-                .descfoot {
-                    color: #FFF;
-                    font-family: Manrope;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 180%; /* 36px */
-                        }
+.PIanddesc {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    width: 300px;
+}
 
-                .Newsfoot {
-                    color: #FFF;
-                    font-family: Playfair Display;
-                    font-size: 32px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                        }
+.secondcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+}
 
-                .signupfoot {
-                    color: #FFF;
-                    font-family: Manrope;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%; /* 30px */
-                        }
+    .PIfoot {
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+                }
+    .descfoot {
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 36px */
+            }
 
-                        .reversetouch {
-                            background-color: #ffffff;
-                            color: #0E204E;;
-                            font-size: 20px;
-                            line-height: 15px;
-                            padding: 11px 36px;
-                        }
-                        
-                        .reversetouch:hover {
-                            background-color: #0E204E; 
-                            color: #ffffff;
-                            font-size: 20px;
-                            line-height: 15px;}
+    .Newsfoot {
+        color: #FFF;
+        font-family: Playfair Display;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+            }
+
+    .signupfoot {
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+            }
+
+            .reversetouch {
+                background-color: #ffffff;
+                color: #0E204E;;
+                font-size: 20px;
+                line-height: 15px;
+                padding: 11px 36px;
+            }
+            
+            .reversetouch:hover {
+                background-color: #0E204E; 
+                color: #ffffff;
+                font-size: 20px;
+                line-height: 15px;}
+
+.subscribefoot {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
             
 /*END FOOTER SECTION  */
 /* ---------------------------------  */
