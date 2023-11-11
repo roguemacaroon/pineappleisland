@@ -4,6 +4,7 @@
 /* After Friday's session, I realize that I still need more work in positioning, I understand it, but I am using a lot of padding tags to fill out where things are not lining up properly */
 /* I am also aware that using exact measurements for pictures and boxes is a dangerous thing to do, as it does not guarentee it will not break */
 /* I also misused "flex shrink/grow" in places and need to remove those, because most are useless code  */
+/* some comments for the code, some for you! */
 
 html {font-family: 'Manrope', sans-serif;}
 
@@ -68,501 +69,501 @@ nav {
     
 /* Description of Pineapple island and the elements encompassing it */
 
-    .paradise {
-	    display: flex;
-	    align-items: center;
-        }
+.paradise {
+    display: flex;
+    align-items: center;
+    }
+
+.box1 {
+min-width: 500px;
+height: 430px;
+background-color: #0E204E;
     
-    .box1 {
-    min-width: 500px;
-    height: 430px;
-    background-color: #0E204E;
-        
-        }
+    }
 
-    /* TRISH - GOAL 2 - Go through and figure out where code can be more efficient!  */
-    .PIdesc {
-    padding-left: 10%;
-    padding-top: 5%;
-    color: #FFF;
-    font-family: Playfair Display;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-        }
+/* TRISH - GOAL 2 - Go through and figure out where code can be more efficient!  */
+.PIdesc {
+padding-left: 10%;
+padding-top: 5%;
+color: #FFF;
+font-family: Playfair Display;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 
-    .PIdesc2 {
-    padding-left: 10%;
-    padding-right: 10%;
-    color: #FFF;
-    font-family: Manrope;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    flex-grow: 0;
-    
-        }
+.PIdesc2 {
+padding-left: 10%;
+padding-right: 10%;
+color: #FFF;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+flex-grow: 0;
 
-    .deskparadise {
-    width: 750px;
-    flex-shrink: 0;
-        }    
+}
+
+.deskparadise {
+width: 750px;
+flex-shrink: 0;
+}    
 /* END HEADER SECTION */
 /* ABOUT PINEAPPLE ISLAND SECTION */
 
 .about {
-    padding-top: 10%;
-    padding-bottom: 10%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+padding-top: 10%;
+padding-bottom: 10%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+align-content: center;
 }
 
 .containerabout {
-    padding-right: 10%;
-    width: 80px;
+padding-right: 10%;
+width: 80px;
 }
 
 .aboutheader {
-    color: #0E204E;
-    font-family: Playfair Display;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-        }
+color: #0E204E;
+font-family: Playfair Display;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 .aboutp {
-    padding-top: 30%;
-    padding-left: 10%;
-    padding-right: 10%;
-    align-content: center;
-    color: #FFF;
-    font-family: Manrope;
-    font-size: 100%;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    text-align:justify;
-    flex-grow: 0;
+padding-top: 30%;
+padding-left: 10%;
+padding-right: 10%;
+align-content: center;
+color: #FFF;
+font-family: Manrope;
+font-size: 100%;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+text-align:justify;
+flex-grow: 0;
 }
 .rowdesk {
-    width: 600px;
-    flex-shrink: 0;
+width: 600px;
+flex-shrink: 0;
 }
 
 .aboutbox {
-    height: 510px;
-    width: 400px;
-    background-color: #0E204E;
-        
-        }
+height: 510px;
+width: 400px;
+background-color: #0E204E;
+
+}
 /* END ABOUT SECTION */
 /* WHY CHOOSE PINEAPPLE ISLAND SECTION */
 
 .whychoose {
-    padding-bottom: 5%;
-    min-width: 500px;
-    height: 700px;
-    background-color: #0E204E;
+padding-bottom: 5%;
+min-width: 500px;
+height: 700px;
+background-color: #0E204E;
 }
 
 .amazingheader.choosing {
-    color: #FFF;
-    width: 300px;
-   }
+color: #FFF;
+width: 300px;
+}
 
 .chooseimgdesk {
-    height: 500px;
+height: 500px;
 }
 
 .choosedesktop {
-    padding: 10%;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-    justify-content: center;
-	align-items: center;
-	align-content: center;
-		
+padding: 10%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+
 }
 
 .box2 {
-    height: 500px;
-    width: 400px;
-    background-color: #FFF;
+height: 500px;
+width: 400px;
+background-color: #FFF;
 }
 
 .choosedeskwording {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-  
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
 }
 
 .agenttext.choosewhy {
-        font-size: 20px;
+font-size: 20px;
 }
 
 .div1 {
-    padding: 40px;
-   
+padding: 40px;
+
 }
 
 .div2 {
-    padding-right: 20px;
+padding-right: 20px;
 }
 
 /* END WHY CHOOSE PINEAPPLE ISLAND SECTION */
- /* WHAT WE OFFER SECTION */
+/* WHAT WE OFFER SECTION */
 
- /* DESKTOP SECTION FIRST */
+/* DESKTOP SECTION FIRST */
 
- .headingoffer {
-    padding-top: 10%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-	align-items: center;
-	align-content: center;
+.headingoffer {
+padding-top: 10%;
+padding-bottom: 5%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
 
- }
+}
 
- .extdeoffer{
-    width: 600px;
- }
+.extdeoffer{
+width: 600px;
+}
 
- .picandicons
- {
-    padding-left: 20px;
-    padding-bottom: 10%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-	align-items: center;
-	align-content: center;
-    gap: 10%;
- }
+.picandicons
+{
+padding-left: 20px;
+padding-bottom: 10%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 10%;
+}
 
 .deskicons {
-    display: flex;
-    flex-direction: column;
-    
+display: flex;
+flex-direction: column;
+
 }
 
 .deskicon1 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: space-evenly;
-    
-    gap: 30%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: flex-start;
+align-content: space-evenly;
+
+gap: 30%;
 }
 
 .deskicon2 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: space-evenly;
-    
-    gap: 30%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: flex-start;
+align-content: space-evenly;
+
+gap: 30%;
 }
 
- /* MOBILE SECTION SECOND */
-   
-        .mobileicons {
-        min-width: 300px;
-        height: 100%;
-        background-color: #0E204E;
-        flex-shrink: 0;
-            }
+/* MOBILE SECTION SECOND */
+
+.mobileicons {
+min-width: 300px;
+height: 100%;
+background-color: #0E204E;
+flex-shrink: 0;
+}
 /* END WHAT WE OFFER SECTION */
 /* GALLERIES SECTION */
 
 /* DESKTOP SECTION FIRST */
-            .h1desk { 
-                color: #0E204E;
-                font-family: Playfair Display;
-                font-size: 60px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-            }
+.h1desk { 
+color: #0E204E;
+font-family: Playfair Display;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 
-            .pdesk {
-                width: 596px;
-                color: #263238;
-                text-align: center;
-                font-family: Manrope;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 180%; 
-            }
+.pdesk {
+width: 596px;
+color: #263238;
+text-align: center;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; 
+}
 
-            .deskgallerydesc {
-                padding-left: 475px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-            }   
+.deskgallerydesc {
+padding-left: 475px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+}   
 
-            .deskimages {
-                    row-gap: 10px;
-                    column-gap: 10px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-            }
+.deskimages {
+row-gap: 10px;
+column-gap: 10px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
 
-            .imgesgallery {
-                width: 400px;
-            }
+.imgesgallery {
+width: 400px;
+}
 
 
 /* END GALLERY SECTION */
 /* FEATURES SECTION */
 
 .amazingimg {
-    height: 600px;
+height: 600px;
 }
 
 .features {
-    padding-top: 250px;
-    padding-bottom: 100px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-    gap: 5%;
-            }
+padding-top: 250px;
+padding-bottom: 100px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 5%;
+}
 
 .featurecontainer {
-    height: 600px;
-    flex-direction: column;
-    
-    
-            }
+height: 600px;
+flex-direction: column;
+
+
+}
 
 .amazingheader {
-    padding-left: 5%;
-    color: #0E204E;
-    font-family: Playfair Display;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-        }
+padding-left: 5%;
+color: #0E204E;
+font-family: Playfair Display;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 
 .altlist {
-    width: 400px;
-    /* height: 87px; */
-    flex-shrink: 0;
+width: 400px;
+/* height: 87px; */
+flex-shrink: 0;
 }
 
 .amazing {
-    text-decoration: none;
-    list-style-type: none;
+text-decoration: none;
+list-style-type: none;
 }
 
 .alternate {
-    background-color: rgba(14, 63, 51, 0.20);;
+background-color: rgba(14, 63, 51, 0.20);;
 }
 
 .listeditems {
-        line-height: 2em;
+line-height: 2em;
 }
 
 /* END FEATURES SECTION */
 /* BECOME AN AGENT */
 
 .joining {
-        padding-top: 150px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        gap: 40px;
-    
+padding-top: 150px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 40px;
+
 }
 
 .joinnow {
-    width: 319px;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: baseline;
-	align-content: baseline;
-    
+width: 319px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: baseline;
+align-content: baseline;
+
 }
 
 .business {
-    height: 600px;
+height: 600px;
 }
 
 .agenttext {
-    color: #263238;
-    font-family: Manrope;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; 
-    flex-grow: 0;/* 30px */
+color: #263238;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+flex-grow: 0;/* 30px */
 }
 /* END BECOME AN AGENT SECTION */
 /* STAY IN TOUCH FORM SECTION */
 
 .intouchform {
-    padding-top: 100px;
-    padding-bottom: 100px;
+padding-top: 100px;
+padding-bottom: 100px;
 
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+align-content: center;
 }
 
 .sitinfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	align-items: center;
-	align-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
 
 }
 
 .input {
-    line-height: 3em;
+line-height: 3em;
 }
 
 .input2 {
-    line-height: 9em;
+line-height: 9em;
 }
 
 .input3 {
-    line-height: 2em;
+line-height: 2em;
 }
 
 .sitform {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	align-items: center;
-	align-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
 }
 
 
 /* END STAY IN TOUCH SECTION */
 /* FOOTER SECTION */
-        footer {
-            min-width: 300px;
-            height: 100%;
-            background-color: #0E204E;
-            flex-shrink: 0;
-                }
+footer {
+min-width: 300px;
+height: 100%;
+background-color: #0E204E;
+flex-shrink: 0;
+}
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10%;
 }
 
 .PIanddesc {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-content: center;
-    width: 300px;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-content: center;
+width: 300px;
 }
 
 .secondcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+width: 300px;
 }
 
-    .PIfoot {
-        color: #FFF;
-        font-family: Manrope;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-                }
-    .descfoot {
-        color: #FFF;
-        font-family: Manrope;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 180%; /* 36px */
-            }
+.PIfoot {
+color: #FFF;
+font-family: Manrope;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.descfoot {
+color: #FFF;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; /* 36px */
+}
 
-    .Newsfoot {
-        color: #FFF;
-        font-family: Playfair Display;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-            }
+.Newsfoot {
+color: #FFF;
+font-family: Playfair Display;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 
-    .signupfoot {
-        color: #FFF;
-        font-family: Manrope;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 30px */
-            }
+.signupfoot {
+color: #FFF;
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+}
 
-            .reversetouch {
-                background-color: #ffffff;
-                color: #0E204E;;
-                font-size: 20px;
-                line-height: 15px;
-                padding: 11px 36px;
-            }
-            
-            .reversetouch:hover {
-                background-color: #0E204E; 
-                color: #ffffff;
-                font-size: 20px;
-                line-height: 15px;}
+.reversetouch {
+background-color: #ffffff;
+color: #0E204E;;
+font-size: 20px;
+line-height: 15px;
+padding: 11px 36px;
+}
+
+.reversetouch:hover {
+background-color: #0E204E; 
+color: #ffffff;
+font-size: 20px;
+line-height: 15px;}
 
 .subscribefoot {
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+gap: 10px;
+display: flex;
+flex-direction: row;
+align-content: center;
 }
-            
+
 /*END FOOTER SECTION  */
 /* ---------------------------------  */
 
@@ -573,96 +574,96 @@ nav {
 
 /* media queries */
 /* Question: Do I put EVERY single tag/class here to begin with hiding EVERYTHING and THEN unhide as I go? */
-    .touch,
-    .links,
-    .mobile_menu,
-    .mobileicons,
-    .mobileparadise,
-    .rowmobile,
-    .offermobile,
-    .extmooffer,
-    .availhome,
-    .descavailhome,
-    .mobileavail
+.touch,
+.links,
+.mobile_menu,
+.mobileicons,
+.mobileparadise,
+.rowmobile,
+.offermobile,
+.extmooffer,
+.availhome,
+.descavailhome,
+.mobileavail
 
-        {display: none
-        }
+{display: none
+}
 /* 
 Phone styles 
 Add a media query that will apply styles when the screen is 360px or larger
 */
 @media only screen and (min-width: 360px) {
-    /* these will show */
-    .logo,
-    .mobile_menu, 
-    .mobileicons,
-    .mobileparadise,
-    .mobileavail,
-    .offermobile,
-    .availhome,
-    .descavailhome,
-    .mobilegallery
-    { display: flex;}
+/* these will show */
+.logo,
+.mobile_menu, 
+.mobileicons,
+.mobileparadise,
+.mobileavail,
+.offermobile,
+.availhome,
+.descavailhome,
+.mobilegallery
+{ display: flex;}
 
-  /* hiding */
-        
-    .touch,
-    .links,
-    .deskparadise,
-    .deskgallery,
-    .deskimages, 
-    .deskicon, 
-    .features
-    
-        {display: none}
-            }
+/* hiding */
 
-/*
-  tablet??
-*/
+.touch,
+.links,
+.deskparadise,
+.deskgallery,
+.deskimages, 
+.deskicon, 
+.features
 
-@media only screen and (min-width: 768px){
-	.logo,
-	.mobile_menu
-	
-	{
-		display: flex;
-			}
-
-            .links,
-            .touch 
-    	 {
-		display: none;
-	}
+{display: none}
 }
 
 /*
-  desktop, low min width because otherwise my screen wasnt big enough for the baseline of 1024px
+tablet??
+*/
+
+@media only screen and (min-width: 768px){
+.logo,
+.mobile_menu
+
+{
+display: flex;
+}
+
+.links,
+.touch 
+{
+display: none;
+}
+}
+
+/*
+desktop, low min width because otherwise my screen wasnt big enough for the baseline of 1024px
 */
 
 @media only screen and (min-width: 874px){
-	.logo,
-	.links,
-    .touch,
-    .deskparadise,
-    .deskgallery, 
-    .features, 
-    .deskimages, 
-    .deskicon 
+.logo,
+.links,
+.touch,
+.deskparadise,
+.deskgallery, 
+.features, 
+.deskimages, 
+.deskicon 
 
-	{
-		display: flex;
-			}
+{
+display: flex;
+}
 
-	.mobile_menu,
-    .mobileavail,
-    .mobileicons,
-    .mobileparadise,
-    .mobilegallery,
-    .offermobile
-	 {
-		display: none;
-	}
+.mobile_menu,
+.mobileavail,
+.mobileicons,
+.mobileparadise,
+.mobilegallery,
+.offermobile
+{
+display: none;
+}
 }
 
 
