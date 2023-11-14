@@ -6,6 +6,26 @@
 /* I also misused "flex shrink/grow" in places and need to remove those, because most are useless code  */
 /* some comments for the code, some for you! */
 
+/* Variables */
+:root { 
+    /* colors */
+--White: #fff;
+--Charcoal: #232323;
+--NavyBlue: #0E204E;
+--DarkTeal: rgba(14, 63, 51, 0.20);
+--DarkSoftBlue: #263238;
+
+
+
+
+
+
+}
+
+
+
+
+
 html {font-family: 'Manrope', sans-serif;}
 
 body {background-color: white;}
