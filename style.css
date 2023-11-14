@@ -37,11 +37,7 @@
 
 }
 
-
-
-
-
-html {font-family: 'Manrope', sans-serif;}
+html {font-family: var(--BodyFont);}
 
 body {background-color: white;}
 
@@ -56,8 +52,8 @@ body {background-color: white;}
     }
 
 .linkslist {
-    color: #232323;
-    font-family: Manrope;
+    color: var(--Charcoal);
+    font-family: var(--BodyFont);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -71,8 +67,8 @@ body {background-color: white;}
 /* text based logo in left corner */
 .logo {
 
-    color: #0E204E;
-    font-family: Playfair Display, serif;
+    color: var(--NavyBlue);
+    font-family: var(--HeaderFont);
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -81,16 +77,16 @@ body {background-color: white;}
 
     /* button  */
 .touch {
-    background-color: #0E204E;
-    color: #FFF;
+    background-color: var(--NavyBlue);
+    color: var(--White);
     font-size: 20px;
     line-height: 15px;
     padding: 11px 36px;
 }
 
 .touch:hover {
-    background-color: #FFF; 
-    color: #0E204E;
+    background-color: var(--White); 
+    color: var(--NavyBlue);
     font-size: 20px;
     line-height: 15px;}
 
@@ -112,7 +108,7 @@ nav {
 .box1 {
 min-width: 500px;
 height: 430px;
-background-color: #0E204E;
+background-color: var(--NavyBlue);
     
     }
 
@@ -120,8 +116,8 @@ background-color: #0E204E;
 .PIdesc {
 padding-left: 10%;
 padding-top: 5%;
-color: #FFF;
-font-family: 'Playfair Display';
+color: var(--White);
+font-family: var(--HeaderFont);
 font-size: 60px;
 font-style: normal;
 font-weight: 700;
@@ -131,8 +127,8 @@ line-height: normal;
 .PIdesc2 {
 padding-left: 10%;
 padding-right: 10%;
-color: #FFF;
-font-family: 'Manrope';
+color: var(--White);
+font-family: var(--BodyFont);
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -165,8 +161,8 @@ width: 80px;
 }
 
 .aboutheader {
-color: #0E204E;
-font-family: 'Playfair Display';
+color: var(--NavyBlue);
+font-family: var(--HeaderFont);
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -177,8 +173,8 @@ padding-top: 30%;
 padding-left: 10%;
 padding-right: 10%;
 align-content: center;
-color: #FFF;
-font-family: 'Manrope';
+color: var(--White);
+font-family: var(--BodyFont);
 font-size: 100%;
 font-style: normal;
 font-weight: 400;
@@ -194,7 +190,7 @@ flex-shrink: 0;
 .aboutbox {
 height: 510px;
 width: 400px;
-background-color: #0E204E;
+background-color: var(--NavyBlue);
 
 }
 /* END ABOUT SECTION */
@@ -204,11 +200,11 @@ background-color: #0E204E;
 padding-bottom: 5%;
 min-width: 500px;
 height: 700px;
-background-color: #0E204E;
+background-color: var(--NavyBlue);
 }
 
 .amazingheader.choosing {
-color: #FFF;
+color: var(--White);
 width: 300px;
 }
 
@@ -230,7 +226,7 @@ align-content: center;
 .box2 {
 height: 500px;
 width: 400px;
-background-color: #FFF;
+background-color: var(--White);
 }
 
 .choosedeskwording {
@@ -319,7 +315,7 @@ gap: 30%;
 .mobileicons {
 min-width: 300px;
 height: 100%;
-background-color: #0E204E;
+background-color: var(--NavyBlue);
 flex-shrink: 0;
 }
 /* END WHAT WE OFFER SECTION */
@@ -327,8 +323,8 @@ flex-shrink: 0;
 
 /* DESKTOP SECTION FIRST */
 .h1desk { 
-color: #0E204E;
-font-family: 'Playfair Display';
+color: var(--NavyBlue);
+font-family: var(--HeaderFont);
 font-size: 60px;
 font-style: normal;
 font-weight: 700;
@@ -337,9 +333,9 @@ line-height: normal;
 
 .pdesk {
 width: 596px;
-color: #263238;
+color: var(--DarkSoftBlue);
 text-align: center;
-font-family: 'Manrope';
+font-family: var(--BodyFont);
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -400,8 +396,8 @@ flex-direction: column;
 
 .amazingheader {
 padding-left: 5%;
-color: #0E204E;
-font-family: 'Playfair Display';
+color: var(--NavyBlue);
+font-family: var(--HeaderFont);
 font-size: 60px;
 font-style: normal;
 font-weight: 700;
@@ -420,7 +416,7 @@ list-style-type: none;
 }
 
 .alternate {
-background-color: rgba(14, 63, 51, 0.20);;
+background-color: var(--DarkTeal);
 }
 
 .listeditems {
@@ -458,8 +454,8 @@ height: 600px;
 }
 
 .agenttext {
-color: #263238;
-font-family: 'Manrope';
+color: var(--DarkSoftBlue);
+font-family: var(--BodyFont);
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -516,7 +512,7 @@ align-content: center;
 footer {
 min-width: 300px;
 height: 100%;
-background-color: #0E204E;
+background-color: var(--NavyBlue);
 flex-shrink: 0;
 }
 .container {
@@ -544,16 +540,16 @@ width: 300px;
 }
 
 .PIfoot {
-color: #FFF;
-font-family: 'Manrope';
+color: var(--White);
+font-family: var(--BodyFont);
 font-size: 40px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
 .descfoot {
-color: #FFF;
-font-family: 'Manrope';
+color: var(--White);
+font-family: var(--BodyFont);
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -561,8 +557,8 @@ line-height: 180%; /* 36px */
 }
 
 .Newsfoot {
-color: #FFF;
-font-family: 'Playfair Display';
+color: var(--White);
+font-family: var(--HeaderFont);
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
@@ -570,8 +566,8 @@ line-height: normal;
 }
 
 .signupfoot {
-color: #FFF;
-font-family: 'Manrope';
+color: var(--White);
+font-family: var(--BodyFont);
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -579,16 +575,16 @@ line-height: 150%; /* 30px */
 }
 
 .reversetouch {
-background-color: #ffffff;
-color: #0E204E;;
+background-color: var(--White);
+color: var(--NavyBlue);;
 font-size: 20px;
 line-height: 15px;
 padding: 11px 36px;
 }
 
 .reversetouch:hover {
-background-color: #0E204E; 
-color: #ffffff;
+background-color: var(--NavyBlue); 
+color: var(--White);
 font-size: 20px;
 line-height: 15px;}
 
