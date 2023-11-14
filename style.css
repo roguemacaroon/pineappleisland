@@ -39,7 +39,7 @@
 
 html {font-family: var(--BodyFont);}
 
-body {background-color: white;}
+body {background-color: var(--White)}
 
 /* HEADER SECTION */
 
@@ -54,9 +54,9 @@ body {background-color: white;}
 .linkslist {
     color: var(--Charcoal);
     font-family: var(--BodyFont);
-    font-size: 20px;
+    font-size: var(--FontSizeBasic);
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--FontWeightBody);
     line-height: normal;}
 
     a:link { text-decoration: none; }
@@ -69,9 +69,9 @@ body {background-color: white;}
 
     color: var(--NavyBlue);
     font-family: var(--HeaderFont);
-    font-size: 32px;
+    font-size: var(--FontSizeSmall);
     font-style: normal;
-    font-weight: 700;
+    font-weight: var(--FontWeightHeader);
     line-height: normal;
 }
 
@@ -79,16 +79,16 @@ body {background-color: white;}
 .touch {
     background-color: var(--NavyBlue);
     color: var(--White);
-    font-size: 20px;
-    line-height: 15px;
+    font-size: var(--FontSizeBasic);
+    line-height: var(--LineHeightButton);
     padding: 11px 36px;
 }
 
 .touch:hover {
     background-color: var(--White); 
     color: var(--NavyBlue);
-    font-size: 20px;
-    line-height: 15px;}
+    font-size: var(--FontSizeBasic);
+    line-height: var(--LineHeightButton);}
 
 nav {
         display: flex;
@@ -118,9 +118,9 @@ padding-left: 10%;
 padding-top: 5%;
 color: var(--White);
 font-family: var(--HeaderFont);
-font-size: 60px;
+font-size: var(--FontSizeHeader);
 font-style: normal;
-font-weight: 700;
+font-weight: var(--FontWeightHeader);
 line-height: normal;
 }
 
@@ -129,9 +129,9 @@ padding-left: 10%;
 padding-right: 10%;
 color: var(--White);
 font-family: var(--BodyFont);
-font-size: 20px;
+font-size: var(--FontSizeBasic);
 font-style: normal;
-font-weight: 400;
+font-weight: var(--FontWeightBody);
 line-height: normal;
 flex-grow: 0;
 
@@ -163,9 +163,9 @@ width: 80px;
 .aboutheader {
 color: var(--NavyBlue);
 font-family: var(--HeaderFont);
-font-size: 40px;
+font-size: var(--FontsizeLarge);
 font-style: normal;
-font-weight: 700;
+font-weight: var(--FontWeightHeader);
 line-height: normal;
 }
 .aboutp {
@@ -175,10 +175,10 @@ padding-right: 10%;
 align-content: center;
 color: var(--White);
 font-family: var(--BodyFont);
-font-size: 100%;
+font-size: var(--FontSizePercentage);
 font-style: normal;
-font-weight: 400;
-line-height: 160%;
+font-weight: var(--FontWeightBody);
+line-height: var(--LineHeightLarge);
 text-align:justify;
 flex-grow: 0;
 }
@@ -199,7 +199,7 @@ background-color: var(--NavyBlue);
 .whychoose {
 padding-bottom: 5%;
 min-width: 500px;
-height: 700px;
+height: var(--FontWeightHeader)px;
 background-color: var(--NavyBlue);
 }
 
@@ -237,7 +237,7 @@ flex-wrap: nowrap;
 }
 
 .agenttext.choosewhy {
-font-size: 20px;
+font-size: var(--FontSizeBasic);
 }
 
 .div1 {
@@ -246,7 +246,7 @@ padding: 40px;
 }
 
 .div2 {
-padding-right: 20px;
+padding-right: var(--FontSizeBasic);
 }
 
 /* END WHY CHOOSE PINEAPPLE ISLAND SECTION */
@@ -325,9 +325,9 @@ flex-shrink: 0;
 .h1desk { 
 color: var(--NavyBlue);
 font-family: var(--HeaderFont);
-font-size: 60px;
+font-size: var(--FontSizeHeader);
 font-style: normal;
-font-weight: 700;
+font-weight: var(--FontWeightHeader);
 line-height: normal;
 }
 
@@ -336,10 +336,10 @@ width: 596px;
 color: var(--DarkSoftBlue);
 text-align: center;
 font-family: var(--BodyFont);
-font-size: 20px;
+font-size: var(--FontSizeBasic);
 font-style: normal;
-font-weight: 400;
-line-height: 180%; 
+font-weight: var(--FontWeightBody);
+line-height: var(--LineHeightXLarge); 
 }
 
 .deskgallerydesc {
@@ -398,9 +398,9 @@ flex-direction: column;
 padding-left: 5%;
 color: var(--NavyBlue);
 font-family: var(--HeaderFont);
-font-size: 60px;
+font-size: var(--FontSizeHeader);
 font-style: normal;
-font-weight: 700;
+font-weight: var(--FontWeightHeader);
 line-height: normal;
 }
 
@@ -420,7 +420,7 @@ background-color: var(--DarkTeal);
 }
 
 .listeditems {
-line-height: 2em;
+line-height: var(--LineHeightListedItems);
 }
 
 /* END FEATURES SECTION */
@@ -456,10 +456,10 @@ height: 600px;
 .agenttext {
 color: var(--DarkSoftBlue);
 font-family: var(--BodyFont);
-font-size: 20px;
+font-size: var(--FontSizeBasic);
 font-style: normal;
-font-weight: 400;
-line-height: 150%; 
+font-weight: var(--FontWeightBody);
+line-height: var(--LineHeightMedium); 
 flex-grow: 0;/* 30px */
 }
 /* END BECOME AN AGENT SECTION */
@@ -487,15 +487,15 @@ align-content: center;
 }
 
 .input {
-line-height: 3em;
+line-height: var(--LineHeightFormInputOne);
 }
 
 .input2 {
-line-height: 9em;
+line-height: var(--LineHeightFormInputTwo);
 }
 
 .input3 {
-line-height: 2em;
+line-height: var(--LineHeightListedItems);
 }
 
 .sitform {
@@ -542,7 +542,7 @@ width: 300px;
 .PIfoot {
 color: var(--White);
 font-family: var(--BodyFont);
-font-size: 40px;
+font-size: var(--FontsizeLarge);
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -550,43 +550,43 @@ line-height: normal;
 .descfoot {
 color: var(--White);
 font-family: var(--BodyFont);
-font-size: 20px;
+font-size: var(--FontSizeBasic);
 font-style: normal;
-font-weight: 400;
-line-height: 180%; /* 36px */
+font-weight: var(--FontWeightBody);
+line-height: var(--LineHeightXLarge); 
 }
 
 .Newsfoot {
 color: var(--White);
 font-family: var(--HeaderFont);
-font-size: 32px;
+font-size: var(--FontSizeSmall);
 font-style: normal;
-font-weight: 400;
+font-weight: var(--FontWeightBody);
 line-height: normal;
 }
 
 .signupfoot {
 color: var(--White);
 font-family: var(--BodyFont);
-font-size: 20px;
+font-size: var(--FontSizeBasic);
 font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 30px */
+font-weight: var(--FontWeightBody);
+line-height: var(--LineHeightMedium); 
 }
 
 .reversetouch {
 background-color: var(--White);
 color: var(--NavyBlue);;
-font-size: 20px;
-line-height: 15px;
+font-size: var(--FontSizeBasic);
+line-height: var(--LineHeightButton);
 padding: 11px 36px;
 }
 
 .reversetouch:hover {
 background-color: var(--NavyBlue); 
 color: var(--White);
-font-size: 20px;
-line-height: 15px;}
+font-size: var(--FontSizeBasic);
+line-height: var(--LineHeightButton);}
 
 .subscribefoot {
 gap: 10px;
