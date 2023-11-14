@@ -23,6 +23,9 @@
 --FontsizeLarge: 40px;
 --FontSizeHeader: 60px;
 --FontSizePercentage: 100%;
+/* Font Weight */
+--FontWeightBody: 400;
+--FontWeightHeader: 700;
 /* Line Heights */
 --LineHeightButton: 15px;
 --LineHeightMedium: 150%;
@@ -31,7 +34,6 @@
 --LineHeightListedItems: 2em;
 --LineHeightFormInputOne: 3em;
 --LineHeightFormInputTwo: 9em; 
-
 
 }
 
@@ -119,7 +121,7 @@ background-color: #0E204E;
 padding-left: 10%;
 padding-top: 5%;
 color: #FFF;
-font-family: Playfair Display;
+font-family: 'Playfair Display';
 font-size: 60px;
 font-style: normal;
 font-weight: 700;
@@ -130,7 +132,7 @@ line-height: normal;
 padding-left: 10%;
 padding-right: 10%;
 color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -164,7 +166,7 @@ width: 80px;
 
 .aboutheader {
 color: #0E204E;
-font-family: Playfair Display;
+font-family: 'Playfair Display';
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -176,7 +178,7 @@ padding-left: 10%;
 padding-right: 10%;
 align-content: center;
 color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 100%;
 font-style: normal;
 font-weight: 400;
@@ -326,7 +328,7 @@ flex-shrink: 0;
 /* DESKTOP SECTION FIRST */
 .h1desk { 
 color: #0E204E;
-font-family: Playfair Display;
+font-family: 'Playfair Display';
 font-size: 60px;
 font-style: normal;
 font-weight: 700;
@@ -337,7 +339,7 @@ line-height: normal;
 width: 596px;
 color: #263238;
 text-align: center;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -399,7 +401,7 @@ flex-direction: column;
 .amazingheader {
 padding-left: 5%;
 color: #0E204E;
-font-family: Playfair Display;
+font-family: 'Playfair Display';
 font-size: 60px;
 font-style: normal;
 font-weight: 700;
@@ -457,7 +459,7 @@ height: 600px;
 
 .agenttext {
 color: #263238;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -543,7 +545,7 @@ width: 300px;
 
 .PIfoot {
 color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 40px;
 font-style: normal;
 font-weight: 500;
@@ -551,7 +553,7 @@ line-height: normal;
 }
 .descfoot {
 color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -560,7 +562,7 @@ line-height: 180%; /* 36px */
 
 .Newsfoot {
 color: #FFF;
-font-family: Playfair Display;
+font-family: 'Playfair Display';
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
@@ -569,7 +571,7 @@ line-height: normal;
 
 .signupfoot {
 color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
