@@ -8,16 +8,29 @@
 
 /* Variables */
 :root { 
-    /* colors */
+/* colors */
 --White: #fff;
 --Charcoal: #232323;
 --NavyBlue: #0E204E;
 --DarkTeal: rgba(14, 63, 51, 0.20);
 --DarkSoftBlue: #263238;
-
-
-
-
+/* Fonts */
+--HeaderFont: 'Playfair Display', serif;
+--BodyFont: 'Manrope', sans-serif;
+/* Font Sizes */
+--FontSizeBasic: 20px;
+--FontSizeSmall: 32px;
+--FontsizeLarge: 40px;
+--FontSizeHeader: 60px;
+--FontSizePercentage: 100%;
+/* Line Heights */
+--LineHeightButton: 15px;
+--LineHeightMedium: 150%;
+--LineHeightLarge: 160%;
+--LineHeightXLarge: 180%;
+--LineHeightListedItems: 2em;
+--LineHeightFormInputOne: 3em;
+--LineHeightFormInputTwo: 9em; 
 
 
 }
