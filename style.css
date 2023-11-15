@@ -41,6 +41,14 @@ html {font-family: var(--BodyFont);}
 
 body {background-color: var(--White)}
 
+/* Reuseable Classes */
+.FontHeader {
+    color: var(--NavyBlue);
+font-family: var(--HeaderFont);
+font-size: var(--FontsizeLarge);
+font-weight: var(--FontWeightHeader);
+}
+
 /* HEADER SECTION */
 
 /* navigation links */
@@ -55,9 +63,8 @@ body {background-color: var(--White)}
     color: var(--Charcoal);
     font-family: var(--BodyFont);
     font-size: var(--FontSizeBasic);
-    font-style: normal;
     font-weight: var(--FontWeightBody);
-    line-height: normal;}
+    }
 
     a:link { text-decoration: none; }
     a:visited { text-decoration: none; }
@@ -70,10 +77,8 @@ body {background-color: var(--White)}
     color: var(--NavyBlue);
     font-family: var(--HeaderFont);
     font-size: var(--FontSizeSmall);
-    font-style: normal;
     font-weight: var(--FontWeightHeader);
-    line-height: normal;
-}
+    }
 
     /* button  */
 .touch {
@@ -119,9 +124,7 @@ padding-top: 5%;
 color: var(--White);
 font-family: var(--HeaderFont);
 font-size: var(--FontSizeHeader);
-font-style: normal;
 font-weight: var(--FontWeightHeader);
-line-height: normal;
 }
 
 .PIdesc2 {
@@ -130,11 +133,7 @@ padding-right: 10%;
 color: var(--White);
 font-family: var(--BodyFont);
 font-size: var(--FontSizeBasic);
-font-style: normal;
 font-weight: var(--FontWeightBody);
-line-height: normal;
-flex-grow: 0;
-
 }
 
 .deskparadise {
@@ -164,23 +163,19 @@ width: 80px;
 color: var(--NavyBlue);
 font-family: var(--HeaderFont);
 font-size: var(--FontsizeLarge);
-font-style: normal;
 font-weight: var(--FontWeightHeader);
-line-height: normal;
 }
 .aboutp {
 padding-top: 30%;
 padding-left: 10%;
 padding-right: 10%;
-align-content: center;
 color: var(--White);
 font-family: var(--BodyFont);
 font-size: var(--FontSizePercentage);
-font-style: normal;
 font-weight: var(--FontWeightBody);
 line-height: var(--LineHeightLarge);
+align-content: center;
 text-align:justify;
-flex-grow: 0;
 }
 .rowdesk {
 width: 600px;
@@ -323,7 +318,7 @@ flex-shrink: 0;
 
 /* DESKTOP SECTION FIRST */
 .deskgallerydesc{
-    display: flex;
+display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 justify-content: center;
@@ -336,9 +331,7 @@ align-content: center;
 color: var(--NavyBlue);
 font-family: var(--HeaderFont);
 font-size: var(--FontSizeHeader);
-font-style: normal;
 font-weight: var(--FontWeightHeader);
-line-height: normal;
 }
 
 .pdesk {
@@ -347,7 +340,6 @@ color: var(--DarkSoftBlue);
 text-align: center;
 font-family: var(--BodyFont);
 font-size: var(--FontSizeBasic);
-font-style: normal;
 font-weight: var(--FontWeightBody);
 line-height: var(--LineHeightXLarge); 
 }
@@ -422,14 +414,11 @@ padding-left: 5%;
 color: var(--NavyBlue);
 font-family: var(--HeaderFont);
 font-size: var(--FontSizeHeader);
-font-style: normal;
 font-weight: var(--FontWeightHeader);
-line-height: normal;
 }
 
 .altlist {
 width: 400px;
-/* height: 87px; */
 flex-shrink: 0;
 }
 
@@ -480,10 +469,8 @@ height: 600px;
 color: var(--DarkSoftBlue);
 font-family: var(--BodyFont);
 font-size: var(--FontSizeBasic);
-font-style: normal;
 font-weight: var(--FontWeightBody);
 line-height: var(--LineHeightMedium); 
-flex-grow: 0;/* 30px */
 }
 /* END BECOME AN AGENT SECTION */
 /* STAY IN TOUCH FORM SECTION */
@@ -566,15 +553,12 @@ width: 300px;
 color: var(--White);
 font-family: var(--BodyFont);
 font-size: var(--FontsizeLarge);
-font-style: normal;
 font-weight: 500;
-line-height: normal;
 }
 .descfoot {
 color: var(--White);
 font-family: var(--BodyFont);
 font-size: var(--FontSizeBasic);
-font-style: normal;
 font-weight: var(--FontWeightBody);
 line-height: var(--LineHeightXLarge); 
 }
@@ -583,16 +567,13 @@ line-height: var(--LineHeightXLarge);
 color: var(--White);
 font-family: var(--HeaderFont);
 font-size: var(--FontSizeSmall);
-font-style: normal;
 font-weight: var(--FontWeightBody);
-line-height: normal;
 }
 
 .signupfoot {
 color: var(--White);
 font-family: var(--BodyFont);
 font-size: var(--FontSizeBasic);
-font-style: normal;
 font-weight: var(--FontWeightBody);
 line-height: var(--LineHeightMedium); 
 }
