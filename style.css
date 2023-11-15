@@ -387,22 +387,25 @@ align-content: center;
 
 .ImageGalleryDesktop {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    gap: 10%;
+    margin-right: 3px;
+
+
+
 
 }
 
-.imgesgallery {
+.ImagesGallery {
 
-    width: 30%;
+    flex-basis: 30%;
     max-width: 300px;
     list-style-type: none;
 
 }
+
 
 /* END GALLERY SECTION */
 /* FEATURES SECTION */
