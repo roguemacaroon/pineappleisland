@@ -37,9 +37,9 @@
 
 }
 
-/* * {
-    box-sizing: border-box;
-} */
+img {
+    width: 100%;
+}
 
 html {
     font-family: var(--BodyFont);
@@ -93,10 +93,7 @@ a:active {
 /* text based logo in left corner */
 .logo {
 
-    color: var(--NavyBlue);
-    font-family: var(--HeaderFont);
     font-size: var(--FontSizeSmall);
-    font-weight: var(--FontWeightHeader);
 }
 
 /* button  */
@@ -142,9 +139,8 @@ nav {
     padding-left: 10%;
     padding-top: 5%;
     color: var(--White);
-    font-family: var(--HeaderFont);
     font-size: var(--FontSizeHeader);
-    font-weight: var(--FontWeightHeader);
+
 }
 
 .PIdesc2 {
@@ -162,11 +158,7 @@ nav {
 }
 
 /* END HEADER SECTION */
-/* ABOUT PINEAPPLE ISLAND SECTION */
-
-.about {
-    padding-top: 10%;
-    padding-bottom: 10%;
+.WrapperOne {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -175,17 +167,30 @@ nav {
     align-content: center;
 }
 
+/* ABOUT PINEAPPLE ISLAND SECTION */
+
+/* .about {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
+
 .containerabout {
     padding-right: 10%;
     width: 80px;
 }
 
-.aboutheader {
+/* .aboutheader {
     color: var(--NavyBlue);
     font-family: var(--HeaderFont);
     font-size: var(--FontsizeLarge);
     font-weight: var(--FontWeightHeader);
-}
+} */
 
 .aboutp {
     padding-top: 30%;
@@ -215,14 +220,14 @@ nav {
 /* END ABOUT SECTION */
 /* WHY CHOOSE PINEAPPLE ISLAND SECTION */
 
-.whychoose {
+/* .whychoose {
     padding-bottom: 5%;
     min-width: 500px;
-    height: var(--FontWeightHeader)px;
+    height: var(--FontWeightHeader);
     background-color: var(--NavyBlue);
-}
+} */
 
-.amazingheader.choosing {
+.choosing {
     color: var(--White);
     width: 300px;
 }
@@ -239,6 +244,7 @@ nav {
     justify-content: center;
     align-items: center;
     align-content: center;
+    background-color: #0E204E;
 
 }
 
@@ -272,6 +278,10 @@ nav {
 /* WHAT WE OFFER SECTION */
 
 /* DESKTOP SECTION FIRST */
+
+.Offerings {
+    font-size: var(--FontSizeHeader);
+}
 
 .headingoffer {
     padding-top: 10%;
@@ -351,10 +361,8 @@ nav {
 }
 
 .h1desk {
-    color: var(--NavyBlue);
-    font-family: var(--HeaderFont);
     font-size: var(--FontSizeHeader);
-    font-weight: var(--FontWeightHeader);
+
 }
 
 .pdesk {
@@ -369,7 +377,7 @@ nav {
 
 /* Desktop Gallery */
 .ImagesGallery img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     display: block;
     object-fit: cover;
@@ -404,7 +412,7 @@ nav {
 /* FEATURES SECTION */
 
 .amazingimg {
-    height: 600px;
+    width: 300px;
 }
 
 .features {
@@ -428,10 +436,8 @@ nav {
 
 .amazingheader {
     padding-left: 5%;
-    color: var(--NavyBlue);
-    font-family: var(--HeaderFont);
     font-size: var(--FontSizeHeader);
-    font-weight: var(--FontWeightHeader);
+
 }
 
 .altlist {
@@ -585,7 +591,6 @@ footer {
 
 .Newsfoot {
     color: var(--White);
-    font-family: var(--HeaderFont);
     font-size: var(--FontSizeSmall);
     font-weight: var(--FontWeightBody);
 }
