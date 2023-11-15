@@ -7,46 +7,50 @@
 /* some comments for the code, some for you! */
 
 /* Variables */
-:root { 
-/* colors */
---White: #fff;
---Charcoal: #232323;
---NavyBlue: #0E204E;
---DarkTeal: rgba(14, 63, 51, 0.20);
---DarkSoftBlue: #263238;
-/* Fonts */
---HeaderFont: 'Playfair Display', serif;
---BodyFont: 'Manrope', sans-serif;
-/* Font Sizes */
---FontSizeBasic: 20px;
---FontSizeSmall: 32px;
---FontsizeLarge: 40px;
---FontSizeHeader: 60px;
---FontSizePercentage: 100%;
-/* Font Weight */
---FontWeightBody: 400;
---FontWeightHeader: 700;
-/* Line Heights */
---LineHeightButton: 15px;
---LineHeightMedium: 150%;
---LineHeightLarge: 160%;
---LineHeightXLarge: 180%;
---LineHeightListedItems: 2em;
---LineHeightFormInputOne: 3em;
---LineHeightFormInputTwo: 9em; 
+:root {
+    /* colors */
+    --White: #fff;
+    --Charcoal: #232323;
+    --NavyBlue: #0E204E;
+    --DarkTeal: rgba(14, 63, 51, 0.20);
+    --DarkSoftBlue: #263238;
+    /* Fonts */
+    --HeaderFont: 'Playfair Display', serif;
+    --BodyFont: 'Manrope', sans-serif;
+    /* Font Sizes */
+    --FontSizeBasic: 20px;
+    --FontSizeSmall: 32px;
+    --FontsizeLarge: 40px;
+    --FontSizeHeader: 60px;
+    --FontSizePercentage: 100%;
+    /* Font Weight */
+    --FontWeightBody: 400;
+    --FontWeightHeader: 700;
+    /* Line Heights */
+    --LineHeightButton: 15px;
+    --LineHeightMedium: 150%;
+    --LineHeightLarge: 160%;
+    --LineHeightXLarge: 180%;
+    --LineHeightListedItems: 2em;
+    --LineHeightFormInputOne: 3em;
+    --LineHeightFormInputTwo: 9em;
 
 }
 
-html {font-family: var(--BodyFont);}
+html {
+    font-family: var(--BodyFont);
+}
 
-body {background-color: var(--White)}
+body {
+    background-color: var(--White)
+}
 
 /* Reuseable Classes */
 .FontHeader {
     color: var(--NavyBlue);
-font-family: var(--HeaderFont);
-font-size: var(--FontsizeLarge);
-font-weight: var(--FontWeightHeader);
+    font-family: var(--HeaderFont);
+    font-size: var(--FontsizeLarge);
+    font-weight: var(--FontWeightHeader);
 }
 
 /* HEADER SECTION */
@@ -54,22 +58,33 @@ font-weight: var(--FontWeightHeader);
 /* navigation links */
 .links {
     display: flex;
-	align-items: center;
-	gap: 40px;
+    align-items: center;
+    gap: 40px;
     list-style-type: none;
-    }
+}
 
 .linkslist {
     color: var(--Charcoal);
     font-family: var(--BodyFont);
     font-size: var(--FontSizeBasic);
     font-weight: var(--FontWeightBody);
-    }
+}
 
-    a:link { text-decoration: none; }
-    a:visited { text-decoration: none; }
-    a:hover { text-decoration: none; }
-    a:active { text-decoration: none; }
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 /* text based logo in left corner */
 .logo {
@@ -78,9 +93,9 @@ font-weight: var(--FontWeightHeader);
     font-family: var(--HeaderFont);
     font-size: var(--FontSizeSmall);
     font-weight: var(--FontWeightHeader);
-    }
+}
 
-    /* button  */
+/* button  */
 .touch {
     background-color: var(--NavyBlue);
     color: var(--White);
@@ -90,158 +105,163 @@ font-weight: var(--FontWeightHeader);
 }
 
 .touch:hover {
-    background-color: var(--White); 
+    background-color: var(--White);
     color: var(--NavyBlue);
     font-size: var(--FontSizeBasic);
-    line-height: var(--LineHeightButton);}
+    line-height: var(--LineHeightButton);
+}
 
 nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        
-    } 
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
 /* Description of Pineapple island and the elements encompassing it */
 
 .paradise {
     display: flex;
     align-items: center;
-    }
+}
 
 .box1 {
-min-width: 500px;
-height: 430px;
-background-color: var(--NavyBlue);
-    
-    }
+    min-width: 500px;
+    height: 430px;
+    background-color: var(--NavyBlue);
+
+}
 
 /* TRISH - GOAL 2 - Go through and figure out where code can be more efficient!  */
 .PIdesc {
-padding-left: 10%;
-padding-top: 5%;
-color: var(--White);
-font-family: var(--HeaderFont);
-font-size: var(--FontSizeHeader);
-font-weight: var(--FontWeightHeader);
+    padding-left: 10%;
+    padding-top: 5%;
+    color: var(--White);
+    font-family: var(--HeaderFont);
+    font-size: var(--FontSizeHeader);
+    font-weight: var(--FontWeightHeader);
 }
 
 .PIdesc2 {
-padding-left: 10%;
-padding-right: 10%;
-color: var(--White);
-font-family: var(--BodyFont);
-font-size: var(--FontSizeBasic);
-font-weight: var(--FontWeightBody);
+    padding-left: 10%;
+    padding-right: 10%;
+    color: var(--White);
+    font-family: var(--BodyFont);
+    font-size: var(--FontSizeBasic);
+    font-weight: var(--FontWeightBody);
 }
 
 .deskparadise {
-width: 750px;
-flex-shrink: 0;
-}    
+    width: 750px;
+    flex-shrink: 0;
+}
+
 /* END HEADER SECTION */
 /* ABOUT PINEAPPLE ISLAND SECTION */
 
 .about {
-padding-top: 10%;
-padding-bottom: 10%;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-align-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .containerabout {
-padding-right: 10%;
-width: 80px;
+    padding-right: 10%;
+    width: 80px;
 }
 
 .aboutheader {
-color: var(--NavyBlue);
-font-family: var(--HeaderFont);
-font-size: var(--FontsizeLarge);
-font-weight: var(--FontWeightHeader);
+    color: var(--NavyBlue);
+    font-family: var(--HeaderFont);
+    font-size: var(--FontsizeLarge);
+    font-weight: var(--FontWeightHeader);
 }
+
 .aboutp {
-padding-top: 30%;
-padding-left: 10%;
-padding-right: 10%;
-color: var(--White);
-font-family: var(--BodyFont);
-font-size: var(--FontSizePercentage);
-font-weight: var(--FontWeightBody);
-line-height: var(--LineHeightLarge);
-align-content: center;
-text-align:justify;
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: var(--White);
+    font-family: var(--BodyFont);
+    font-size: var(--FontSizePercentage);
+    font-weight: var(--FontWeightBody);
+    line-height: var(--LineHeightLarge);
+    align-content: center;
+    text-align: justify;
 }
+
 .rowdesk {
-width: 600px;
-flex-shrink: 0;
+    width: 600px;
+    flex-shrink: 0;
 }
 
 .aboutbox {
-height: 510px;
-width: 400px;
-background-color: var(--NavyBlue);
+    height: 510px;
+    width: 400px;
+    background-color: var(--NavyBlue);
 
 }
+
 /* END ABOUT SECTION */
 /* WHY CHOOSE PINEAPPLE ISLAND SECTION */
 
 .whychoose {
-padding-bottom: 5%;
-min-width: 500px;
-height: var(--FontWeightHeader)px;
-background-color: var(--NavyBlue);
+    padding-bottom: 5%;
+    min-width: 500px;
+    height: var(--FontWeightHeader)px;
+    background-color: var(--NavyBlue);
 }
 
 .amazingheader.choosing {
-color: var(--White);
-width: 300px;
+    color: var(--White);
+    width: 300px;
 }
 
 .chooseimgdesk {
-height: 500px;
+    height: 500px;
 }
 
 .choosedesktop {
-padding: 10%;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-align-content: center;
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
 }
 
 .box2 {
-height: 500px;
-width: 400px;
-background-color: var(--White);
+    height: 500px;
+    width: 400px;
+    background-color: var(--White);
 }
 
 .choosedeskwording {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
 }
 
 .agenttext.choosewhy {
-font-size: var(--FontSizeBasic);
+    font-size: var(--FontSizeBasic);
 }
 
 .div1 {
-padding: 40px;
+    padding: 40px;
 
 }
 
 .div2 {
-padding-right: var(--FontSizeBasic);
+    padding-right: var(--FontSizeBasic);
 }
 
 /* END WHY CHOOSE PINEAPPLE ISLAND SECTION */
@@ -250,98 +270,98 @@ padding-right: var(--FontSizeBasic);
 /* DESKTOP SECTION FIRST */
 
 .headingoffer {
-padding-top: 10%;
-padding-bottom: 5%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-align-content: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
 }
 
-.extdeoffer{
-width: 600px;
+.extdeoffer {
+    width: 600px;
 }
 
-.picandicons
-{
-padding-left: 20px;
-padding-bottom: 10%;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-align-content: center;
-gap: 10%;
+.picandicons {
+    padding-left: 20px;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10%;
 }
 
 .deskicons {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .deskicon1 {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-between;
-align-items: flex-start;
-align-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-evenly;
 
-gap: 30%;
+    gap: 30%;
 }
 
 .deskicon2 {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-between;
-align-items: flex-start;
-align-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-evenly;
 
-gap: 30%;
+    gap: 30%;
 }
 
 /* MOBILE SECTION SECOND */
 
 .mobileicons {
-min-width: 300px;
-height: 100%;
-background-color: var(--NavyBlue);
-flex-shrink: 0;
+    min-width: 300px;
+    height: 100%;
+    background-color: var(--NavyBlue);
+    flex-shrink: 0;
 }
+
 /* END WHAT WE OFFER SECTION */
 /* GALLERIES SECTION */
 
 /* DESKTOP SECTION FIRST */
-.deskgallerydesc{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-align-content: center;
-    
+.deskgallerydesc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
 }
 
-.h1desk { 
-color: var(--NavyBlue);
-font-family: var(--HeaderFont);
-font-size: var(--FontSizeHeader);
-font-weight: var(--FontWeightHeader);
+.h1desk {
+    color: var(--NavyBlue);
+    font-family: var(--HeaderFont);
+    font-size: var(--FontSizeHeader);
+    font-weight: var(--FontWeightHeader);
 }
 
 .pdesk {
-width: 596px;
-color: var(--DarkSoftBlue);
-text-align: center;
-font-family: var(--BodyFont);
-font-size: var(--FontSizeBasic);
-font-weight: var(--FontWeightBody);
-line-height: var(--LineHeightXLarge); 
+    width: 596px;
+    color: var(--DarkSoftBlue);
+    text-align: center;
+    font-family: var(--BodyFont);
+    font-size: var(--FontSizeBasic);
+    font-weight: var(--FontWeightBody);
+    line-height: var(--LineHeightXLarge);
 }
 
 /* .deskgallerydesc {
@@ -367,236 +387,242 @@ align-content: center;
 
 .ImageGalleryDesktop {
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
     gap: 10%;
-    
+
 }
+
 .imgesgallery {
-    
+
     width: 30%;
     max-width: 300px;
     list-style-type: none;
-    
-    }
+
+}
 
 /* END GALLERY SECTION */
 /* FEATURES SECTION */
 
 .amazingimg {
-height: 600px;
+    height: 600px;
 }
 
 .features {
-padding-top: 250px;
-padding-bottom: 100px;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-align-content: center;
-gap: 5%;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5%;
 }
 
 .featurecontainer {
-height: 600px;
-flex-direction: column;
+    height: 600px;
+    flex-direction: column;
 
 
 }
 
 .amazingheader {
-padding-left: 5%;
-color: var(--NavyBlue);
-font-family: var(--HeaderFont);
-font-size: var(--FontSizeHeader);
-font-weight: var(--FontWeightHeader);
+    padding-left: 5%;
+    color: var(--NavyBlue);
+    font-family: var(--HeaderFont);
+    font-size: var(--FontSizeHeader);
+    font-weight: var(--FontWeightHeader);
 }
 
 .altlist {
-width: 400px;
-flex-shrink: 0;
+    width: 400px;
+    flex-shrink: 0;
 }
 
 .amazing {
-text-decoration: none;
-list-style-type: none;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .alternate {
-background-color: var(--DarkTeal);
+    background-color: var(--DarkTeal);
 }
 
 .listeditems {
-line-height: var(--LineHeightListedItems);
+    line-height: var(--LineHeightListedItems);
 }
 
 /* END FEATURES SECTION */
 /* BECOME AN AGENT */
 
 .joining {
-padding-top: 150px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-align-content: center;
-gap: 40px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
 
 }
 
 .joinnow {
-width: 319px;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: center;
-align-items: baseline;
-align-content: baseline;
+    width: 319px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: baseline;
 
 }
 
 .business {
-height: 600px;
+    height: 600px;
 }
 
 .agenttext {
-color: var(--DarkSoftBlue);
-font-family: var(--BodyFont);
-font-size: var(--FontSizeBasic);
-font-weight: var(--FontWeightBody);
-line-height: var(--LineHeightMedium); 
+    color: var(--DarkSoftBlue);
+    font-family: var(--BodyFont);
+    font-size: var(--FontSizeBasic);
+    font-weight: var(--FontWeightBody);
+    line-height: var(--LineHeightMedium);
 }
+
 /* END BECOME AN AGENT SECTION */
 /* STAY IN TOUCH FORM SECTION */
 
 .intouchform {
-padding-top: 100px;
-padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: center;
-align-items: center;
-align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .sitinfo {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
 }
 
 .input {
-line-height: var(--LineHeightFormInputOne);
+    line-height: var(--LineHeightFormInputOne);
 }
 
 .input2 {
-line-height: var(--LineHeightFormInputTwo);
+    line-height: var(--LineHeightFormInputTwo);
 }
 
 .input3 {
-line-height: var(--LineHeightListedItems);
+    line-height: var(--LineHeightListedItems);
 }
 
 .sitform {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 
 /* END STAY IN TOUCH SECTION */
 /* FOOTER SECTION */
 footer {
-min-width: 300px;
-height: 100%;
-background-color: var(--NavyBlue);
-flex-shrink: 0;
+    min-width: 300px;
+    height: 100%;
+    background-color: var(--NavyBlue);
+    flex-shrink: 0;
 }
+
 .container {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
 }
 
 .PIanddesc {
-display: flex;
-flex-direction: column;
-justify-content:center;
-align-content: center;
-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
 }
 
 .secondcontainer {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-content: center;
-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
 }
 
 .PIfoot {
-color: var(--White);
-font-family: var(--BodyFont);
-font-size: var(--FontsizeLarge);
-font-weight: 500;
+    color: var(--White);
+    font-family: var(--BodyFont);
+    font-size: var(--FontsizeLarge);
+    font-weight: 500;
 }
+
 .descfoot {
-color: var(--White);
-font-family: var(--BodyFont);
-font-size: var(--FontSizeBasic);
-font-weight: var(--FontWeightBody);
-line-height: var(--LineHeightXLarge); 
+    color: var(--White);
+    font-family: var(--BodyFont);
+    font-size: var(--FontSizeBasic);
+    font-weight: var(--FontWeightBody);
+    line-height: var(--LineHeightXLarge);
 }
 
 .Newsfoot {
-color: var(--White);
-font-family: var(--HeaderFont);
-font-size: var(--FontSizeSmall);
-font-weight: var(--FontWeightBody);
+    color: var(--White);
+    font-family: var(--HeaderFont);
+    font-size: var(--FontSizeSmall);
+    font-weight: var(--FontWeightBody);
 }
 
 .signupfoot {
-color: var(--White);
-font-family: var(--BodyFont);
-font-size: var(--FontSizeBasic);
-font-weight: var(--FontWeightBody);
-line-height: var(--LineHeightMedium); 
+    color: var(--White);
+    font-family: var(--BodyFont);
+    font-size: var(--FontSizeBasic);
+    font-weight: var(--FontWeightBody);
+    line-height: var(--LineHeightMedium);
 }
 
 .reversetouch {
-background-color: var(--White);
-color: var(--NavyBlue);;
-font-size: var(--FontSizeBasic);
-line-height: var(--LineHeightButton);
-padding: 11px 36px;
+    background-color: var(--White);
+    color: var(--NavyBlue);
+    ;
+    font-size: var(--FontSizeBasic);
+    line-height: var(--LineHeightButton);
+    padding: 11px 36px;
 }
 
 .reversetouch:hover {
-background-color: var(--NavyBlue); 
-color: var(--White);
-font-size: var(--FontSizeBasic);
-line-height: var(--LineHeightButton);}
+    background-color: var(--NavyBlue);
+    color: var(--White);
+    font-size: var(--FontSizeBasic);
+    line-height: var(--LineHeightButton);
+}
 
 .subscribefoot {
-gap: 10px;
-display: flex;
-flex-direction: row;
-align-content: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
 
 /*END FOOTER SECTION  */
@@ -619,86 +645,82 @@ align-content: center;
 .extmooffer,
 .availhome,
 .descavailhome,
-.mobileavail
-
-{display: none
+.mobileavail {
+    display: none
 }
+
 /* 
 Phone styles 
 Add a media query that will apply styles when the screen is 360px or larger
 */
 @media only screen and (min-width: 360px) {
-/* these will show */
-.logo,
-.mobile_menu, 
-.mobileicons,
-.mobileparadise,
-.mobileavail,
-.offermobile,
-.availhome,
-.descavailhome,
-.mobilegallery
-{ display: flex;}
 
-/* hiding */
+    /* these will show */
+    .logo,
+    .mobile_menu,
+    .mobileicons,
+    .mobileparadise,
+    .mobileavail,
+    .offermobile,
+    .availhome,
+    .descavailhome,
+    .mobilegallery {
+        display: flex;
+    }
 
-.touch,
-.links,
-.deskparadise,
-.deskgallery,
-.deskimages, 
-.deskicon, 
-.features
+    /* hiding */
 
-{display: none}
+    .touch,
+    .links,
+    .deskparadise,
+    .deskgallery,
+    .deskimages,
+    .deskicon,
+    .features {
+        display: none
+    }
 }
 
 /*
 tablet??
 */
 
-@media only screen and (min-width: 768px){
-.logo,
-.mobile_menu
+@media only screen and (min-width: 768px) {
 
-{
-display: flex;
-}
+    .logo,
+    .mobile_menu {
+        display: flex;
+    }
 
-.links,
-.touch 
-{
-display: none;
-}
+    .links,
+    .touch {
+        display: none;
+    }
 }
 
 /*
 desktop, low min width because otherwise my screen wasnt big enough for the baseline of 1024px
 */
 
-@media only screen and (min-width: 874px){
-.logo,
-.links,
-.touch,
-.deskparadise,
-.deskgallery, 
-.features, 
-.deskimages, 
-.deskicon 
+@media only screen and (min-width: 874px) {
 
-{
-display: flex;
+    .logo,
+    .links,
+    .touch,
+    .deskparadise,
+    .deskgallery,
+    .features,
+    .deskimages,
+    .deskicon {
+        display: flex;
+    }
+
+    .mobile_menu,
+    .mobileavail,
+    .mobileicons,
+    .mobileparadise,
+    .mobilegallery,
+    .offermobile {
+        display: none;
+    }
 }
-
-.mobile_menu,
-.mobileavail,
-.mobileicons,
-.mobileparadise,
-.mobilegallery,
-.offermobile
-{
-display: none;
-}
-}
-
-
