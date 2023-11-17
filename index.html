@@ -20,20 +20,28 @@
             <div class="FontHeader logo">
                 <h2>Pineapple Island</h2>
             </div>
+
             <ul class="links">
                 <li><a href="#" class="linkslist">About Us</a></li>
                 <li><a href="#" class="linkslist">What we do</a></li>
                 <li><a href="#" class="linkslist">Project</a></li>
             </ul>
-            <div>
+            <div class="GetInTouchDesk">
                 <button a href="#" class="touch">Get in Touch</a></button>
             </div>
         </nav>
-        <img src="./assets/Mobile Icons/Hamburger.png" alt="menu" class="mobile_menu">
+        <div class="MobileWrapperOne">
+            <div class="FontHeader LogoMobile">
+                <h2>Pineapple Island</h2>
+            </div>
+            <div class="MobileMenu">
+                <img src="./assets/Mobile Icons/Hamburger.png" alt="menu">
+            </div>
+        </div>
         <!-- section -->
         <section class="paradise">
             <!-- section class paradise could be a wrapper -->
-            <div>
+            <div class="DesktopBoxOne">
                 <div class="box1"> <!-- This is the blue box that is holding text information -->
                     <div>
                         <h1 class="FontHeader PIdesc">Pineapple Island:<br>
@@ -45,19 +53,40 @@
                             and an opportunity to build a home.</p>
                     </div>
                 </div>
-            </div>
-            <!-- img that is beside the blue box holding text-->
-            <div>
-                <img src="./assets/Desktop Images/1101.png" alt="A modern home" class="deskparadise">
-            </div>
-            <!-- mobile -->
-            <!-- img -->
-            <div class="mobileparadise">
-                <img src="./assets/Mobile Images/000.png" alt="a modern home">
+
+                <!-- img that is beside the blue box holding text-->
+                <div class="deskparadise">
+                    <img src="./assets/Desktop Images/1101.png" alt="A modern home">
+                </div>
             </div>
 
-            <!-- h1, p, and button need to stack on picture -->
         </section>
+        <!-- mobile --><!-- h1, p, and button need to stack on picture -->
+        <div class="MobileBoxOne">
+            <div class="Testing">
+                <div>
+                    <h1 class="FontHeader DescriptionOneMobile">Pineapple Island:
+                        Where Every Home is
+                        a Slice of Paradise </h1>
+                </div>
+                <div>
+                    <p class="DescriptionTwoMobile">a community that gives you a taste of happiness, a place
+                        you'll love to live,
+                        and an opportunity to build a home.</p>
+                </div>
+                <div class="GetInTouchMobile">
+                    <button a href="#" class="MobileTouch touch">Get in Touch</a></button>
+                </div>
+            </div>
+            <!-- <div class="MobileParadise">
+                <img src="./assets/Mobile Images/000.png" alt="a modern home">
+            </div> -->
+        </div>
+
+
+        <!-- img -->
+
+
     </header>
     <!-- section -->
     <main>
@@ -79,10 +108,13 @@
             </div>
             <!-- mobile -->
             <!-- img -->
+
+        </section>
+        <div class="MobileAbout">
             <div class="rowmobile">
                 <img src="./assets/Mobile Images/100.png" alt="street view of exterior homes">
             </div>
-        </section>
+        </div>
         <!-- section -->
         <section class="WrapperOne">
             <!-- section class whychoose could be in WrapperOne -->
@@ -111,8 +143,8 @@
         </section>
         <!-- section -->
         <section class="whatweoffer">
-            <!-- section class whatweoffer could be in WrapperOne -->
-            <div class="headingoffer">
+
+            <div class="HeadingOffer">
                 <h1 class="FontHeader Offerings">What Pineapple Island Offers</h1>
             </div>
             <div class="picandicons">
@@ -151,33 +183,34 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile section -->
-            <div>
-                <h1 class="offermobile">Pineapple Island Offers</h1>
-            </div>
-            <div class="extmooffer">
-                <img src="./assets/Mobile Images/300.png" alt="exterior home">
-            </div>
-
-            <!-- mobile icons -->
-
-            <div class="mobileicons">
-                <!-- icon and li Eco Friendly-->
-                <div><img src="./assets/Mobile Icons/000.png" alt="pine tree icon"></div>
-                <!-- icon and li Smart Homes-->
-                <div><img src="./assets/Mobile Icons/001.png" alt="full signal wifi icon"></div>
-                <!-- icon and li Good Rates-->
-                <div><img src="./assets/Mobile Icons/002.png" alt="cash stack icon"></div>
-                <!-- icon and li Serviced Apartment-->
-                <div><img src="./assets/Mobile Icons/100.png" alt="settings gears icon"></div>
-                <!-- icon and li Private Secuirty-->
-                <div><img src="./assets/Mobile Icons/101.png" alt="security lock icon"></div>
-                <!-- icon and li 24/7 Electricity-->
-                <div><img src="./assets/Mobile Icons/102.png" alt="lightbulb icon"></div>
-            </div>
         </section>
+        <!-- Mobile section -->
+        <div>
+            <h1 class="offermobile">Pineapple Island Offers</h1>
+        </div>
+        <div class="extmooffer">
+            <img src="./assets/Mobile Images/300.png" alt="exterior home">
+        </div>
+
+        <!-- mobile icons -->
+
+        <div class="mobileicons">
+            <!-- icon and li Eco Friendly-->
+            <div><img src="./assets/Mobile Icons/000.png" alt="pine tree icon"></div>
+            <!-- icon and li Smart Homes-->
+            <div><img src="./assets/Mobile Icons/001.png" alt="full signal wifi icon"></div>
+            <!-- icon and li Good Rates-->
+            <div><img src="./assets/Mobile Icons/002.png" alt="cash stack icon"></div>
+            <!-- icon and li Serviced Apartment-->
+            <div><img src="./assets/Mobile Icons/100.png" alt="settings gears icon"></div>
+            <!-- icon and li Private Secuirty-->
+            <div><img src="./assets/Mobile Icons/101.png" alt="security lock icon"></div>
+            <!-- icon and li 24/7 Electricity-->
+            <div><img src="./assets/Mobile Icons/102.png" alt="lightbulb icon"></div>
+        </div>
+
         <!-- THIS IS THE GALLERY SECTION -->
-        <section>
+        <section class="DesktopGallery">
             <div class="deskgallerydesc">
                 <h1 class="FontHeader h1desk">Galleries</h1>
                 <!-- FontHeader is supposed to become a reusable class to eliminate redundancy  -->
@@ -207,48 +240,59 @@
                     <li class="ImagesGallery"><img src="./assets/Desktop Images/602.png" alt="home interior"></li>
                 </ul>
             </div>
-            <!-- Mobile version -->
-            <!-- div -->
-            <div>
-                <!-- There could be a MobileGalleryWrapper here for the mobile section -->
-                <div class="mobileavail">
-                    <h1 class="availhome">Available homes</h1>
-                    <p class="descavailhome">a community that gives you a taste of happiness, a place you'll love to
-                        live and an opportunity to build a home.</p>
-                </div>
-                <!-- div mobile gallery -->
-                <div class="mobilegallery">
+        </section>
+        <!-- Mobile version -->
+        <!-- div -->
+        <div class="MobileAvaliabilityGallery">
+            <!-- There could be a MobileGalleryWrapper here for the mobile section -->
+            <div class="mobileavail">
+                <h1 class="availhome">Available homes</h1>
+                <p class="descavailhome">a community that gives you a taste of happiness, a place you'll love to
+                    live and an opportunity to build a home.</p>
+            </div>
+
+            <!-- div mobile gallery -->
+            <div class="MobileGalleryWrapper">
+                <ul class="ImageGalleryMobile">
                     <!-- mobile images -->
                     <!-- img 400 exterior pool-->
-                    <div><img src="./assets/Mobile Images/400.png" alt="exterior home poolside"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/400.png" alt="exterior home poolside">
+                    </li>
                     <!-- img 401 exterior home-->
-                    <div><img src="./assets/Mobile Images/401.png" alt="exterior home"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/401.png" alt="exterior home"></li>
                     <!-- img 500 interior home-->
-                    <div><img src="./assets/Mobile Images/500.png" alt="interior home"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/500.png" alt="interior home"></li>
                     <!-- img 501 exterior home pool-->
-                    <div><img src="./assets/Mobile Images/501.png" alt="exterior home poolside"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/501.png" alt="exterior home poolside">
+                    </li>
                     <!-- img 600 interior home-->
-                    <div><img src="./assets/Mobile Images/600.png" alt="interior home"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/600.png" alt="interior home"></li>
                     <!-- img 601 exterior home walkway-->
-                    <div><img src="./assets/Mobile Images/601.png" alt="exterior home walkway"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/601.png" alt="exterior home walkway">
+                    </li>
                     <!-- img 700 interior home stairs and fireplace-->
-                    <div><img src="./assets/Mobile Images/700.png" alt="interior home showing stairs and fireplace">
-                    </div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/700.png"
+                            alt="interior home showing stairs and fireplace">
+                    </li>
                     <!-- img 800 interior home-->
-                    <div><img src="./assets/Mobile Images/800.png" alt="interior home"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/800.png" alt="interior home"></li>
                     <!-- img 801 interior home-->
-                    <div><img src="./assets/Mobile Images/801.png" alt="interior home"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/801.png" alt="interior home"></li>
                     <!-- img 900 interior home hallway-->
-                    <div><img src="./assets/Mobile Images/900.png" alt="interior home showing hallway"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/900.png"
+                            alt="interior home showing hallway"></li>
                     <!-- img 1000 interior home-->
-                    <div><img src="./assets/Mobile Images/1000.png" alt="interior home"></div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/1000.png" alt="interior home"></li>
                     <!-- img 1001 interior home bathroom-->
-                    <div><img src="./assets/Mobile Images/1001.png" alt="interior home showing bathroom">
-                    </div><!-- img 1100 exterior home fence roadside-->
-                    <div><img src="./assets/Mobile Images/1100.png" alt="exterior home roadside fence"></div>
-                </div>
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/1001.png"
+                            alt="interior home showing bathroom">
+                    </li><!-- img 1100 exterior home fence roadside-->
+                    <li class="MobileGallery"> <img src="./assets/Mobile Images/1100.png"
+                            alt="exterior home roadside fence"></li>
+                </ul>
             </div>
-        </section>
+        </div>
+
         <!-- section --><!-- This section is hidden on mobile -->
         <!-- Add a div called WrapperTwo -->
 

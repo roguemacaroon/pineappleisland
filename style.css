@@ -46,7 +46,8 @@ html {
 }
 
 body {
-    background-color: var(--White)
+    background-color: var(--White);
+    z-index: auto;
 }
 
 /* Reuseable Classes */
@@ -96,6 +97,24 @@ a:active {
     font-size: var(--FontSizeSmall);
 }
 
+.LogoMobile {
+
+    font-size: var(--FontSizeBasic);
+}
+
+.MobileMenu {
+    width: fit-content
+}
+
+.MobileWrapperOne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+
 /* button  */
 .touch {
     background-color: var(--NavyBlue);
@@ -103,6 +122,10 @@ a:active {
     font-size: var(--FontSizeBasic);
     line-height: var(--LineHeightButton);
     padding: 11px 36px;
+}
+
+.MobileTouch {
+    margin: 0.4em auto;
 }
 
 .touch:hover {
@@ -124,15 +147,52 @@ nav {
 
 .paradise {
     display: flex;
+
     align-items: center;
 }
 
 .box1 {
-    min-width: 500px;
-    height: 430px;
     background-color: var(--NavyBlue);
+    display: flex;
+    flex-direction: column;
 
 }
+
+.MobileBoxOne {
+    background-image: url("./assets/Mobile Images/000.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+
+}
+
+.Testing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.DescriptionOneMobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 24px;
+    color: var(--White);
+}
+
+
 
 /* TRISH - GOAL 2 - Go through and figure out where code can be more efficient!  */
 .PIdesc {
@@ -279,15 +339,19 @@ nav {
 
 /* DESKTOP SECTION FIRST */
 
+.whatweoffer {
+    display: flex;
+    flex-direction: column;
+}
+
 .Offerings {
     font-size: var(--FontSizeHeader);
 }
 
-.headingoffer {
-    padding-top: 10%;
-    padding-bottom: 5%;
+.HeadingOffer {
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -299,8 +363,7 @@ nav {
 }
 
 .picandicons {
-    padding-left: 20px;
-    padding-bottom: 10%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -376,6 +439,11 @@ nav {
 }
 
 /* Desktop Gallery */
+.DesktopGallery {
+    display: flex;
+    flex-direction: column;
+}
+
 .ImagesGallery img {
     /* width: 100%; */
     height: 100%;
@@ -408,6 +476,48 @@ nav {
     /* center content */
 }
 
+/* Mobile Gallery */
+.MobileAvaliabilityGallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileavail {
+    display: flex;
+    flex-direction: column;
+}
+
+.MobileGalleryWrapper {
+    width: 85%;
+    /* content takes up percent of page*/
+    max-width: 360px;
+    /* content cannot exceed width beyond x*/
+    margin: 0 auto;
+    /* center content */
+}
+
+.MobileGallery img {
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.MobileGallery {
+    aspect-ratio: 1;
+    min-width: fit-content;
+    width: 15%;
+    max-width: 135px;
+    list-style-type: none;
+}
+
+.ImageGalleryMobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0%;
+    gap: 10px;
+}
+
 /* END GALLERY SECTION */
 /* FEATURES SECTION */
 
@@ -416,8 +526,6 @@ nav {
 }
 
 .features {
-    padding-top: 250px;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -462,7 +570,6 @@ nav {
 /* BECOME AN AGENT */
 
 .joining {
-    padding-top: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -636,8 +743,19 @@ footer {
 
 /* media queries */
 /* Question: Do I put EVERY single tag/class here to begin with hiding EVERYTHING and THEN unhide as I go? */
-.touch,
+.DesktopGallery,
+.MobileAvaliabilityGallery,
+.whatweoffer,
+.WrapperOne,
+.Testing,
+.paradise,
+.MobileWrapperOne,
+.MobileBoxOne,
+.logo,
+.GetInTouchDesk,
+.GetInTouchMobile,
 .links,
+.box1,
 .mobile_menu,
 .mobileicons,
 .mobileparadise,
@@ -646,7 +764,10 @@ footer {
 .extmooffer,
 .availhome,
 .descavailhome,
-.mobileavail {
+.mobileavail,
+.joining,
+.intouchform,
+.container {
     display: none
 }
 
@@ -657,10 +778,12 @@ Add a media query that will apply styles when the screen is 360px or larger
 @media only screen and (min-width: 360px) {
 
     /* these will show */
-    .logo,
-    .mobile_menu,
+    .MobileAvaliabilityGallery,
+    .Testing,
+    .MobileWrapperOne,
+    .GetInTouchMobile,
+    .MobileBoxOne,
     .mobileicons,
-    .mobileparadise,
     .mobileavail,
     .offermobile,
     .availhome,
@@ -670,14 +793,21 @@ Add a media query that will apply styles when the screen is 360px or larger
     }
 
     /* hiding */
-
-    .touch,
+    .DesktopGallery,
+    .WrapperOne,
+    .paradise,
+    .logo,
+    .DesktopBoxOne,
+    .GetInTouchDesk,
     .links,
-    .deskparadise,
     .deskgallery,
     .deskimages,
     .deskicon,
-    .features {
+    .features,
+    .whatweoffer,
+    .joining,
+    .intouchform,
+    .container {
         display: none
     }
 }
@@ -686,7 +816,7 @@ Add a media query that will apply styles when the screen is 360px or larger
 tablet??
 */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 
     .logo,
     .mobile_menu {
@@ -697,7 +827,7 @@ tablet??
     .touch {
         display: none;
     }
-}
+} */
 
 /*
 desktop, low min width because otherwise my screen wasnt big enough for the baseline of 1024px
@@ -705,21 +835,35 @@ desktop, low min width because otherwise my screen wasnt big enough for the base
 
 @media only screen and (min-width: 874px) {
 
+    /* these will show */
+    .DesktopGallery,
+    .WrapperOne,
+    .paradise,
     .logo,
+    .DesktopBoxOne,
     .links,
-    .touch,
-    .deskparadise,
+    .GetInTouchDesk,
+    .box1,
     .deskgallery,
     .features,
     .deskimages,
-    .deskicon {
+    .deskicon,
+    .whatweoffer,
+    .joining,
+    .intouchform,
+    .container {
         display: flex;
     }
 
-    .mobile_menu,
+    /* These will hide */
+    .MobileAvaliabilityGallery,
+    .Testing,
+    .MobileMenu,
+    .MobileParadise,
+    .MobileWrapperOne,
+    .MobileBoxOne,
     .mobileavail,
     .mobileicons,
-    .mobileparadise,
     .mobilegallery,
     .offermobile {
         display: none;
