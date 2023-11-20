@@ -471,8 +471,16 @@ nav {
 
 }
 
+/* Wrapper holding the image and the icons */
+
 .Offerings {
     font-size: var(--FontSizeHeader);
+}
+
+.OfferingsMainImage {
+    padding: 10%;
+    object-fit: contain;
+
 }
 
 .OfferingsWrapper {
@@ -482,16 +490,45 @@ nav {
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 10%;
-
-}
-
-.OfferingsMainImage {
-    width: 600px;
+    width: 100%;
 }
 
 /* icons list */
+
+.DeskIconsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .DeskIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10%;
+    gap: 70px;
+}
+
+.IconAndDescription {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.IconAndDescription img {
+    max-width: 70px;
+}
+
+
+/* .DeskIcons {
     display: flex;
     flex-direction: column;
 
@@ -537,7 +574,7 @@ nav {
     max-width: 50px;
     list-style-type: none;
 
-}
+} */
 
 
 /* --------- MOBILE SECTION SECOND---- */
@@ -1054,7 +1091,7 @@ footer {
 
 /* media queries */
 /* Question: Do I put EVERY single tag/class here to begin with hiding EVERYTHING and THEN unhide as I go? */
-.DesktopGallery,
+/* .DesktopGallery,
 .MobileAvaliabilityGallery,
 .whatweoffer,
 .WrapperOne,
@@ -1086,7 +1123,7 @@ footer {
 .MobileJoinNow,
 .MobileSummary {
     display: none
-}
+} */
 
 /* 
 Phone styles 
